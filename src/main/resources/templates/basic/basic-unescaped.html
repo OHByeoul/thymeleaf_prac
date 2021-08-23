@@ -10,5 +10,12 @@
   <li>text output1 <span th:text="${data}"></span></li>
   <li>컨텐츠 직접 출력 = [[${data}]]</li>
 </ul>
+
+<ul>
+    <li>text escaped <span th:text="${data2}"></span></li>
+    <li>text unescaped <span th:utext="${data2}"></span></li>
+    <li>컨텐츠 직접 출력 = [[${data2}]]</li>
+    <li>컨텐츠 unescaped 출력 = [(${data2})]</li>
+</ul>
 </body>
 </html>
