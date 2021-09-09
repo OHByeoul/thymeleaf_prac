@@ -20,5 +20,9 @@
     <li>${userMap['userA']['username']} = <span th:text="${userMap['userA']['username']}"></span></li>
     <li>${userMap['userA'].getUsername()} = <span th:text="${userMap['userA'].getUsername()}"></span></li>
 </ul>
+<h1>local var</h1>
+<div th:with="u=${user}">
+    <p>local var = <span th:text="${u.username}"></span></p>
+</div>
 </body>
 </html>
